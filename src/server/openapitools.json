@@ -7,7 +7,7 @@
       "v3.0": {
         "generatorName": "typescript-axios",
         "output": "../../src/client/api/",
-        "glob": "api.yaml"
+        "glob": "apis/api.yaml"
       }
     }
   }

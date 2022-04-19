@@ -4,6 +4,8 @@ on:
   pull_request:
     types:
       - closed
+    paths:
+      - "src/server/apis/**"
 
 jobs:
   # 해당 PR Merge 후 실행
