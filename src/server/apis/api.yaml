@@ -49,11 +49,11 @@ components:
         - price
       properties:
         id:
-          type: string
+          type: integer
           format: int64
         name:
           type: string
           example: Phone
         price:
-          type: integer
+          type: string
           format: int64
