@@ -24,9 +24,9 @@ jobs:
           java-version: "17"
 
       # Git 계정 로그인 ( PR 담당자 )
-      - uses:
-          dawidd6/action-git-user-config@v1
-          # yarn generate script 실행
+      - uses: dawidd6/action-git-user-config@v1
+
+      # yarn generate script 실행
       - name: OpenAPI Generating
         run: yarn workspace server generate
 
