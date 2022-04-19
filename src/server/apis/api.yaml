@@ -55,5 +55,5 @@ components:
           type: string
           example: Phone
         price:
-          typse: integer
+          type: integer
           format: int64
