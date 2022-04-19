@@ -47,7 +47,7 @@ components:
       required:
         - name
         - price
-      propertiess:
+      properties:
         id:
           type: integer
           format: int64
