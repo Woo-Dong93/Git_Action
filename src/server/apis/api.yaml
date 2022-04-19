@@ -49,7 +49,7 @@ components:
         - price
       properties:
         id:
-          type: integer
+          type: string
           format: int64
         name:
           type: string
