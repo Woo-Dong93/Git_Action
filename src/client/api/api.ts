@@ -29,10 +29,10 @@ import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } fr
 export interface Product {
     /**
      * 
-     * @type {number}
+     * @type {string}
      * @memberof Product
      */
-    'id'?: number;
+    'id'?: string;
     /**
      * 
      * @type {string}
