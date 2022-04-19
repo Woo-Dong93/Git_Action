@@ -11,5 +11,5 @@ jobs:
     # 빌드 환경 셋팅
     runs-on: ubuntu-latest
 
-   steps:
+    steps:
       - run: 'echo "No build required"'
