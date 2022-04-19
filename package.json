@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Woo-Dong93/Git_Action.git",
+  "author": "woo.dong <woo.dong@navercorp.com>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.0",
+  "workspaces": [
+    "src/**/!(dist)"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "server",
+  "packageManager": "yarn@3.2.0",
+  "scripts": {
+    "generate": "openapi-generator-cli generate"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.4.26"
+  }
+}
