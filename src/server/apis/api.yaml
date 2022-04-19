@@ -44,7 +44,7 @@ components:
       title: a Product
       description: Products
       type: object
-      require:
+      required:
         - name
         - price
       properties:

@@ -28,15 +28,10 @@ jobs:
       # Git 계정 로그인 ( PR 담당자 )
       - uses: dawidd6/action-git-user-config@v1
 
-      # Document Validation
-      - name: OpenAPI Document Validation
-        run: |
-          yarn install
-          yarn workspace server oas-validate
-
       # yarn generate script 실행
       - name: OpenAPI Generating
         run: |
+          yarn install
           yarn workspace server generate
 
       # sdk/packages/sdk/apis/... 파일 변동 확인
