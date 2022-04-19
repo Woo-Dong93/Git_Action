@@ -25,3 +25,34 @@ jobs:
 
       # Git 계정 로그인 ( PR 담당자 )
       - uses: dawidd6/action-git-user-config@v1
+
+      # yarn generate script 실행
+      - name: OpenAPI Generating
+        run: yarn workspace server generate
+
+      # sdk/packages/sdk/apis/... 파일 변동 확인
+      - name: Check Git status
+        id: git
+        shell: bash
+        run: |
+          RESULT=$(git status)
+          if
+            [[ $RESULT == *"src/client/api"* ]];
+          then
+            echo "generated successfully"
+          else
+            echo "generated faild"
+            exit 1
+          fi
+
+      # commit 내역 남기기
+      - uses: EndBug/add-and-commit@v9.0.0
+        with:
+          message: "feat: API 클라이언트 생성"
+          add: "add src/client/api"
+
+      # 해당 PR에 Push
+      - uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.TEST_SECRET }}
+          branch: ${{ github.ref }}
