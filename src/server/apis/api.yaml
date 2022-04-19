@@ -47,12 +47,12 @@ components:
       required:
         - name
         - price
-      properties:
+      propertiess:
         id:
           type: integer
           format: int64
         name:
-          type: strings
+          type: string
           example: Phone
         price:
           type: integer
