@@ -25,5 +25,4 @@ jobs:
         run: java --version
 
       # Git 계정 로그인 ( PR 담당자 )
-      - name: Configure git
-        uses: dawidd6/action-git-user-config@v1
+      - uses: dawidd6/action-git-user-config@v1
