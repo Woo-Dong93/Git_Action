@@ -52,7 +52,7 @@ components:
           type: integer
           format: int64
         name:
-          type: string
+          type: strings
           example: Phone
         price:
           type: integer
