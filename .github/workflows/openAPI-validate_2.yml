@@ -1,0 +1,15 @@
+name: openAPI_validate
+
+on:
+  pull_request:
+    paths-ignore:
+      - "src/server/apis/**"
+
+jobs:
+  # 해당 PR Merge 후 실행
+  build:
+    # 빌드 환경 셋팅
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: 'echo "No build required"'
