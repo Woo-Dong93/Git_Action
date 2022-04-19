@@ -28,7 +28,9 @@ jobs:
 
       # yarn generate script 실행
       - name: OpenAPI Generating
-        run: yarn workspace server generate
+        run: |
+        yarn install
+        yarn workspace server generate
 
       # sdk/packages/sdk/apis/... 파일 변동 확인
       - name: Check Git status
